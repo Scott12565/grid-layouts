@@ -21,7 +21,7 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1400px;
+    max-width: 1300px;
     margin: 0 auto;
 }
 
@@ -45,7 +45,7 @@ body{
 }
 
 .container{
-    max-width: 1400px;
+    max-width: 1300px;
     margin: 50px auto;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -57,11 +57,6 @@ img{
     width: 100%;
 }
 
-.item-3 img,
-.item-4 img,
-.item-5 img{
-    /* width: 25%; */
-}
 .item-1{
     grid-column: 1 / span 2;
 }
@@ -69,29 +64,89 @@ img{
 .item-1 .about-web3{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 55px;
+    gap: 35px;
+    padding: 40px 0;
+    word-wrap: break-word;
+}
+
+.item-1 .about-web3 h1 {
+    font-size: 3.8rem;
+    font-weight: 700;
+    text-align: start;
+    letter-spacing: .1rem;
+    text-transform: capitalize;
+    line-height: 1;
+}
+
+.item-1 .about-web3 p{
+    font-size: 1.15rem;
+    font-weight: 500;
+    color: #393131;
+    line-height: 1.4;
+    text-align: start;
+    padding-top: 12px;
+}
+
+.item-1 .about-web3 button{
+    margin-top: 1.5rem;
+    background-color: coral;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    padding: 13px 20px;
+    border: none;
+    border-radius: 10px;
 }
 
 .item-2{
-    background-color: #333;
+    background-color: #070814;
     color: #fff;
-    height: 100%;
+    padding: 20px 0;
+}
+
+.item-2 h2{
+    font-size: 2.5rem;
+    color: rgb(207, 139, 11);
+    font-weight: 600;
+    padding: 20px;
+    padding-bottom: 5px;
+}
+
+.item-2 div{
+    padding: 30px 0;
+    width: 90%;
+    margin: 0 auto;
+    border-bottom: 1px solid #fff;
+}
+
+.item-2 div h4{
+    font-size: 1.3rem;
+    font-weight:400;
+    color: #f44f4f;
+    padding: 17px 0;
 }
 
 .item-3{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
+    gap: 20px;
+    align-items: center;
 }
-.item-3 div{
-   margin: 0 20px;
+
+.item-3 img,
+.item-4 img,
+.item-5 img{
+    /* width: 50%; */
 }
 
 .item-4{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
+    gap: 20px;
+    align-items: center;
 }
 
 .item-5{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
+    gap: 20px;
+    align-items: center;
 }
